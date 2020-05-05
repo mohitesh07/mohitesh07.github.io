@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- adding icon to the web page -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- title of the webpage changing based on the current url -->
+    <title>Mohitesh Ch Agarwal | About Me</title>
+
+    <!-- linking to Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- linking to font-awesome -->
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Glider/glider.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- including navbar on top of every page -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+            <h1><i class="fas fa-address-card"></i> About</h1>
+        </a>
+    </nav>
+
+    <!-- start and end of content -->
+    <div class="container">
+        <article class="row single-post mt-3 no-gutters shadow-lg">
+            <div class="col-md-12">
+                <div class="image-wrapper float-left px-3 py-3">
+                    <img src="img/mohitesh.jpeg" class="rounded-circle" height="200px" width="200px" alt="mohitesh_picture">
+                </div>
+                <div class="single-post-content-wrapper p-3">
+                    <h2>
+                        <a href="https://www.kaggle.com/mohitesh07" target="_blank" class="text-white"><i
+                                class="fab fa-kaggle"></i></a>
+                        <a href="https://www.linkedin.com/in/mohitesh-ch-agarwal" target="_blank" class="text-white"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mohitesh07" target="_blank" class="text-white"><i
+                                class="fab fa-github"></i></a>
+                    </h2>
+                    <h1 class="text-white">#fullstack #AI #ML #designer <br>@mohitesh07</h1>
+                    <h4 class="text-justify">
+                        I am currently a final year CSE undergraduate from
+                        <a href="http://makautwb.ac.in/" class="text-white">
+                            Maulana Abul Kalam Azad University of Technology, West Bengal
+                        </a>. I have spent a large portion of my undergraduate years in designing and implementing machine learning models, full-stack web development projects, contributing on open source projects and working for
+                        startups as a Data Science Professional.
+                    </h4>
+                </div>
+            </div>
+        </article>
+
+        <article class="row single-post mt-3 py-4 px-4 no-gutters shadow-lg">
+            <h1 class="text-white mb-4">#projects @AI @ML @fullstack</h1>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div class="mx-2">
+                        <a href="http://m-drive.herokuapp.com/" target="_blank"><img src="img/projects/mdrive.png" class="rounded" alt=""></a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="https://urlle.in/" target="_blank"><img src="img/projects/urlle.png" class="rounded" alt=""></a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="https://mohitesh07.github.io/3d-bin-packing/" target="_blank"><img src="img/projects/bin_packing.PNG" class="rounded" alt=""></a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="https://github.com/mohitesh07/Human-Activity-Recognition" target="_blank"><img src="img/projects/har.jpg" class="rounded" alt=""></a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="https://github.com/mohitesh07/food-odering-web-app" target="_blank"><img src="img/projects/food.PNG" class="rounded" alt=""></a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="" target="_blank"><img src="img/projects/gene.jpg" class="rounded" alt=""></a>
+                    </div>
+                    <div class="mx-2">
+                        <a href="https://mohitesh07.github.io/Lottery-Scheduling/" target="_blank"><img src="img/projects/lottery.PNG" class="rounded" alt=""></a>
+                    </div>
+                </div>
+
+                <button role="button" aria-label="Previous" class="glider-prev"></button>
+                <button role="button" aria-label="Next" class="glider-next mt-4 text-white"><i class="far fa-arrow-alt-circle-right"></i></button>
+            </div>
+        </article>
+
+        <article class="row single-post pt-3 mt-3 justify-content-center no-gutters shadow-lg">
+            <h1 class="mb-4 text-center"><u><a href="https://urlle.in/r/MohiteshResume" target="_blank" class="text-white">@resume download_link</a></u></h1>
+        </article>
+        <br>
+
+        <footer>
+            <h4 class="text-center">Designed with <i class="fas fa-heart"></i> by Mohitesh Ch Agarwal</h4>
+        </footer>
+        <br>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            new Glider(document.querySelector('.glider'), {
+                slidesToShow: 4,
+                slidesToScroll: 5,
+                draggable: true,
+                dots: '.dots',
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                }
+            });
+        });
+    </script>
+
+    <!-- adding js files for the Bootstrap JS functionality -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Glider/glider.js"></script>
+</body>
+
+</html>

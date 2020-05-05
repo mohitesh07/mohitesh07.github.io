@@ -1,0 +1,16 @@
+body{
+    background: url("../img/bg-pattern.png"), #0575E6;
+    background: url("../img/bg-pattern.png"), linear-gradient(to right, #0575E6, #00F260);
+    font-family: 'Space Mono', monospace;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+.btn {
+    opacity: 1.0;
+}
